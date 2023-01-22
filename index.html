@@ -8,21 +8,300 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Mi Blog</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Principal</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<body class="bodycss">
+
+<!--AQUI ESTA EL ENCABEZADO DONDE ESTA EL NAVBAR-->
+
+  <header>
+    <nav class="navbar navbar-expand-lg fs-2  letra" style="background-color: #4b83ab;">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2 text-light" href="index.html">Principal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-light" aria-current="page" href="biografia.html">Biogfrafia</a>
+            <a class="nav-link text-light" href="Kinal.html">Kinal</a>
+          </div>
+        </div>
+        <div class="float-end iconos">
+          <a target="_blank" href="https://www.instagram.com/moiseslemus_/"><img src="https://i.pinimg.com/originals/4a/d3/5a/4ad35ab0be4073f392ca251fe73598ae.png" width="50px"></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100010493989138"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png" width="38px"></a>
+          <a target="_blank" href="https://www.twitch.tv/moyjuegos155"> <img src="https://static.macupdate.com/products/62268/l/twitch-logo.png?v=1661539769" width="47px"></a>
+        </div>          
+      </div>    
+    </nav>
+  </header>
+    <main>
+
+      <br>
+      <!-- PARTE DONDE ESTA El TITULO-->
+
+      <div class="container rounded-pill" style="background-color: #4b83ab;">
+        <div class="row">
+          <div class="col-12">
+            <p class="titulo">Mis Gustos</p>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <!-- PARTE DONDE ESTA El CARRUSEL-->
+
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.muycomputer.com/wp-content/uploads/2022/07/Mercado-de-los-videojuegos-decrece-2022-1000x600.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container bg-dark rounded">
+                  <div class="row">
+                    <strong><h5 id="titulo-carrusel fs-3">VIDEOJUEGOS</h5></strong>
+                  <strong><p class="texto-carrusel fs-5">Los videojuegos han estado presentes una gran parte de mi vida </p></strong>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://static.eldiario.es/clip/53fb077d-976f-43da-8217-5bf67dfb0b36_16-9-aspect-ratio_default_0.jpg" class="d-block w-100 " alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container bg-dark rounded">
+                  <div class="row">
+                    <strong><h5 id="titulo-carrusel p-2 fs-3">SERIES Y PELICULAS</h5></strong>
+                  <strong><p class="texto-carrusel fs-5">Toda mi vida he visto peliculas y series que me han acompañado por mi trayectoria</p></strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.muycomputerpro.com/wp-content/uploads/2021/09/lenguajes-programacion-populares-2021.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container bg-dark rounded">
+                  <div class="row">
+                    <strong><h5 id="titulo-carrusel p-2 fs-3">PROGRAMACION</h5></strong>
+                  <strong><p class="texto-carrusel fs-5">La programacion a sido una nueva etapa en mi vida por la cual me falta mucho por aprender</p></strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="biografia.html">Biogfrafia</a>
-              <a class="nav-link" href="Kinal.html">Kinal</a>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <br><br>
+
+      <!-- PARTE DONDE ESTA El CONTENIDO DE VDEOJUEGOS-->
+
+      <div class="container titulos-2">
+        <div class="row">
+          <p>VIDEOJUEGOS</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="container-fluid">
+        <div class="card-group">
+          <div class="card" style="background-color: #283b49;">
+            <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2620/gPTPUF3mT9FXELav8OKXmr9j.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">UNCHARTED</h5>
+              <p class="card-text text-light">Una saga impresionante, con una jugabilidad impecable, este es de los 
+                primeros juegos que jugué y que mas me marcaron, dedicandole muchas horas de juego debido a que
+                he jugado los 4 juegos al menos unas 3 veces cada uno.
+              </p>
+              <p class="card-text text-light"><small>Horas aproximadas: 133.5 Horas </small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #F7AF6F;">
+            <img src="https://imagenes.elpais.com/resizer/ZG-NLSn0nNVCOsUcDgCYTk1A7SM=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/OKAJJNARGVAWBGZELPBRR7UGZY.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">THE LAST OF US</h5>
+              <p class="card-text">Un juego sobre supervivencia en un mundo post-apocaliptico que te muestra la
+                cruda realidad del mundo pero tambien enseñandote valores que termina haciendo que te encariñes con
+                los personajes y el juego en general.
+              </p>
+              <p class="card-text"><small class="text-muted">Horas aproximadas: 58.2 Horas</small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #b7e1ff;">
+            <img src="https://wallpaperforu.com/wp-content/uploads/2021/03/Wallpaper-Spiderman-Ps4-Superheroes-Games-Hd-4k-201810.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SPIDER-MAN</h5>
+              <p class="card-text">Este juego es una buena base para conocer al personaje principal  los valores que
+                tiene siendo spider man el superheroe favorito de muchos, a muchas por no decir todas las personas les
+              encanto el juego en general, una obra de arte. </p>
+              <p class="card-text"><small class="text-muted">Horas aproximadas: 46 Horas</small></p>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+
+      <br><br>
+      <!-- PARTE DONDE ESTA El CONTENIDO DE SERIES Y PELICULAS-->
+
+      <div class="container titulos-2">
+        <div class="row">
+          <p>SERIES Y PELICULAS</p>
+        </div>
+      </div>
+
+        <br>
+
+        <div class="card-group">
+          <div class="card" style="background-color: #315F42;">
+            <img src="https://cinefilosfrustrados.com/wp-content/uploads/2018/11/portada-breaking-bad.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+              <h5 class="card-title">BREAKING BAD</h5>
+              <p class="card-text">Breaking Bad es una serie que te engancha desde los primeros momentos con
+                la intriga y el suspenso que incluyen que te hacen querer ver mas episodios, con una historia fascinante,
+                unos personajes increibles y el transfondo que tiene hace que esta serie sea una de mis favoritas. 
+              </p>
+              <p class="card-text"><small>Horas aproximadas: 65 Horas</small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #6A704E;">
+            <img src="https://m.media-amazon.com/images/I/814FWjSQFfL._RI_.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+              <h5 class="card-title">THE WALKING DEAD</h5>
+              <p class="card-text">Esta serie te mete en un mundo donde la humanidad se ha extinguido casi por completo 
+                y nos ponen a la vista de un policia que busca a su familia y asi lo imposible por protegerla, hace que nos 
+                encariñemos con los personajes pero tambien odiemos a otros por las desiciones que toman, con una historia
+                solida y buena narrativa la hace una de las mejores series. 
+              </p>
+              <p class="card-text"><small>Horas aproximadas: 124 Horas</small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #C9BFBD;">
+            <img src="https://m.media-amazon.com/images/I/915pQr7zq-L._RI_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">THE BOYS</h5>
+              <p class="card-text">Esta serie no es como otras series basadas en superheroes, en esta serie te muestran
+                lo que muy probablemente pasaria si existieran los superheroes, con una realidad cruda y sincera, esta serie
+                te muestra el lado oscuro de los superheroes, con una historia increible y unos personajes fascinantes donde 
+                amaras a unos y amaras con odio a otros, esta serie es de las mejores.
+              </p>
+              <p class="card-text"><small class="text-muted">Horas aproximadas: 25 Horas</small></p>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <!-- APARTADO DE LAS PELICULAS -->
+
+        <div class="card-group">
+          <div class="card" style="background-color: #A4DAFF;">
+            <img src="http://4.bp.blogspot.com/--eN8oxHsSak/Ug_m2GyErgI/AAAAAAAADl0/0ag9fRF6xu4/s1600/grown-ups-2-wallpaper-01.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">SON COMO NIÑOS 2</h5>
+              <p class="card-text">Son como niños 2 es una de esas peliculas que por mas veces que veas no te cansaras
+                de ver, un grupo de amigos que estan juntos desde pequeños se reunen para hacer sus locuras otra vez
+                y por su comportamiento y chstes hacen pensar que son como niños,  con una comedia muy buena y 
+                un guion espectacular hacen que esta pelicula forme parte de las mejores 
+                que he visto. 
+              </p>
+              <p class="card-text"><small class="text-muted">Duracion de la pelicula: 1:41 Horas</small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color:#152229 ;">
+            <img src="https://pics.filmaffinity.com/Prisioneros-603075972-large.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+              <h5 class="card-title">PRISIONEROS</h5>
+              <p class="card-text">Que se puede decr de esta pelicula aparte de "Obra maestra", prisioneros es una 
+                pelicula de dos perspectivas donde ves por un lado a un padre que perdio a su hija y hace lo imposible por 
+                encontrarla y tambien a un detective que intenta encontrar a las niñas perdidas, cada quien con su metodo
+                pero con el mismo fin, haces que te empieces a frustrar junto con los personajes, sin duda de las mejores.
+              </p>
+              <p class="card-text"><small>Duracion de la pelicula: 2:33 Horas</small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #3A4350;">
+            <img src="https://i.blogs.es/0c32ed/capitan-america-civil-war-la-pelicula-imagen-blogdecine/1366_2000.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+              <h5 class="card-title">CAPITAN AMERICA : CIVIL WAR</h5>
+              <p class="card-text">Civil war fue sin dudas una de las mejores peliculas del universo Marvel, tras los acuerdos
+                de socovia los vengadores se separan porque unos no estan de acuerdo con los terminos, haciendo que estos 
+                se peleen entre si con un final impactante donde tienes que escoger a que equipo le vas, si al Team Iron Man
+                o al Team Capitan America, es una pelicla fascinante tanto visualmente como narrativamente asi formando 
+                parte de las mejores peliculas de Marvel. 
+              </p>
+              <p class="card-text"><small>Duracion de la pelicula: 2.28 Horas</small></p>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+        <!--PARTE DELCONTENIDO DONDE ESTA PROGRAMACION-->
+
+        <div class="container titulos-2">
+          <div class="row">
+            <p>PROGRAMACION</p>
+          </div>
+        </div>
+        <br>
+
+        <div class="card-group">
+          <div class="card" style="background-color: #D9D9D9;">
+            <img src="https://okhosting.com/wp-content/uploads/2019/01/java.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">JAVA</h5>
+              <p class="card-text">Java es un lenguaje de programacion muy extenso con varias posibilidades casi
+                ilimitadas, fue el primer lenguaje de programacion que aprendi y sigo aprendiendo, por lo tanto java es mi 
+                lenguaje de programacion favorito.
+              </p>
+              <p class="card-text"><small class="text-muted">Tiempo aproximado: 7 Horas a la semana</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://proximahost.es/blog/wp-content/uploads/2021/07/MySQL.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">MYSQL</h5>
+              <p class="card-text">MySQL es un sistema de gestion de base de datos con el cual se pueden hacer multiples
+                cosas, es uno de los mas famosos y el primer sistema de gestion de base de datos que aprendi a usar, aun 
+              me falta mucho que descubrir pero sin duda es de los mejores. </p>
+              <p class="card-text"><small class="text-muted">Tiempo aproximado: 3 Horas a la semana </small></p>
+            </div>
+          </div>
+          <div class="card" style="background-color: #D9D9D9;">
+            <img src="https://programadoresbrasil.com.br/wp-content/uploads/2020/02/Introduction-to-HTML-and-CSS-for-Beginners-Hafiza-Rabbia-Shafiq.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">HTML Y CSS</h5>
+              <p class="card-text">HTML y CSS son una combinacion que siempre van a estar juntos y es imposible
+                aprender uno sin aprender algo del otro, siempre tendras alguna caraceristica de algo que requiera del otro 
+                para mejorar la estetica, muchas personas dominan estas dos herramientas ya que es bastante demandado 
+                en el area de empleo y son muy faciles de aprender, aunque no sean lenguajes de programacion oficiales
+                son un par de pilares muy importantes en las paginas web.
+              </p>
+              <p class="card-text"><small class="text-muted">Tiempo aproximado: 11 Horas a la semana</small></p>
+            </div>
+          </div>
+        </div>
+      
+    </main>
+    
+    <br><br><br>
+
+    <footer>
+      <div class="p-2" style="background-color: #4b83ab;">
+        <strong><p class="pie-pagina">Esta pagina tiene todos los derechos reservados y solicita abstenerse de plagios o imitaciones.</p></strong>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
