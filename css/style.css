@@ -44,3 +44,22 @@
     text-align: center;
     margin-top: 10px;
 }
+
+.texto-biografia{
+    font-size: 20px;
+    text-align: center;
+}
+
+.titulo-biog{
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color:  #4b83ab;
+    border-radius: 32px;
+}
+
+.card-biog{
+    background-color:  #4b83ab;
+    color: white;
+}
