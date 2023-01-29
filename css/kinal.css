@@ -4,6 +4,184 @@ body{
 
 .titulos{
     padding-left: 50px;
-    margin-left: 50px;
     font-size: 20px;
 }
+
+.trabajo{
+    font-family: cursive;
+    font-size: 45px;
+    text-align: center;
+    color: #112459;
+}
+
+.texto-trab{
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.capac{
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+    color: #112459;
+}
+
+.card-osc{
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+
+.card-cla{
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+
+.cont-capac{
+    background-color:#dcc026 ;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.jb-tit{
+    text-align: center;
+    font-size: 60px;
+    font-family: fantasy;
+    color: white;
+    background-color: #112459;
+}
+
+.jb-tod{
+    background-color: #112459;
+    padding-bottom: 70px;
+}
+
+.numero{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.escrito{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.numyesc{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.jb{
+    padding-bottom: 70px;
+    background-color: #112459
+}
+
+.row-jb{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.h1-mec{
+    font-size: 70px;
+    font-family: cursive;
+}
+
+.cont-part{
+    font-size: 50px;
+    font-family: cursive;
+    color: #112459;
+    text-align: center;
+    font-style: italic;
+}
+
+.cont-foot{
+    background-color: #112459;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.direccion {
+    text-align: right;
+    
+}
+
+.img-foot{
+    padding-top: 30px;
+}
+
+.tex-ini{
+    background-color: #dcc026;
+    border-radius: 50px;
+    padding-bottom: 10px;
+}
+
+.fin-foot{
+    color: white;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------*/
+
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 80s linear infinite;
+            animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
